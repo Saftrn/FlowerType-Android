@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            tools:src="@android:color/darker_gray"
+            tools:ignore="RtlHardcoded"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Azalea"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tv_item_genus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                tools:text="flower of several trees of genus Prunus"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/data"
+        android:textColor="@android:color/black"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/black"
+                android:text="@string/kelas"/>
+
+            <TextView
+                android:id="@+id/tv_item_clade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                tools:text="Plantae"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/black"
+                android:text="@string/ordo"/>
+
+            <TextView
+                android:id="@+id/tv_item_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                tools:text="Magnoliopsida"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/black"
+                android:text="@string/genus"/>
+
+            <TextView
+                android:id="@+id/tv_item_jenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                tools:text="Ericales"/>
+
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
